@@ -1,0 +1,18 @@
+name: First Workflow
+
+on: [push]
+
+jobs:
+  build:
+  
+     runs-on: ubuntu-latest
+     
+     steps:
+     - uses: actions/checkout@v1
+     - name: Run a one-line script
+       run: echo Hi,Iam Ramya!
+     - name: Run a multi-line script
+       run :
+         echo I am from Devops Team
+         echo working on GitHub Actions.
+     
